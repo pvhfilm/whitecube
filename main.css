@@ -1,0 +1,465 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: white;
+  padding: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+
+a {
+  color: white !important; }
+
+@font-face {
+  font-family: 'Univers';
+  src: url("fonts/univers.woff") format("woff"); }
+
+.header {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("images/omarender.png");
+  background-size: cover; }
+
+.header--text {
+  margin-top: 240px;
+  color: white;
+  padding: 20px;
+  /*background: white;*/
+  /*margin-left: 560px;*/ }
+
+.header--heading, .header--details, .header--specificdetails {
+  opacity: 0; }
+
+.introduction {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+i {
+  font-family: adobe-caslon-pro, serif;
+  font-style: italic;
+  font-weight: 400; }
+
+.grid-image {
+  width: 100%; }
+
+h1 {
+  font-size: 62px !important;
+  /*width: 75%;*/ }
+
+h2 {
+  font-family: "adobe-caslon-pro",serif !important;
+  text-transform: uppercase;
+  font-size: 18px !important;
+  letter-spacing: 9px;
+  font-style: normal;
+  font-weight: 700 !important; }
+
+h4 {
+  font-family: univers !important;
+  color: white !important;
+  margin-left: 5px;
+  font-size: 20px !important; }
+
+p {
+  font-family: "adobe-caslon-pro",serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  color: white;
+  font-family: Univers;
+  font-size: 22px;
+  padding: 20px;
+  padding-left: 20px;
+  opacity: .7;
+  z-index: 10000; }
+  nav:hover {
+    opacity: 1; }
+
+.nav--black {
+  color: black !important; }
+
+.nav--left {
+  float: left; }
+
+.nav--left span {
+  display: none; }
+
+.nav--left:hover > span {
+  display: block;
+  font-size: 16px; }
+
+.nav--right {
+  float: right;
+  margin-right: 20px; }
+
+.a-black {
+  color: black !important; }
+
+pre {
+  font-family: Univers !important;
+  color: white !important; }
+
+h1 {
+  font-family: "adobe-caslon-pro",serif !important;
+  font-style: normal;
+  font-weight: 600; }
+
+ul li {
+  font-family: "adobe-caslon-pro",serif !important;
+  font-size: 18px; }
+
+.grid-blockone {
+  /*background-image: url('images/010.png');*/
+  background: white;
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; }
+  .grid-blockone:hover {
+    background-blend-mode: multiply;
+    opacity: .5; }
+
+em {
+  font-weight: 600; }
+
+.image-full {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("images/drawing.jpg"); }
+
+.oma {
+  background-image: url("images/010.png") !important; }
+
+.chocolate {
+  background-image: url("images/002.jpg") !important; }
+
+.garden {
+  background-image: url("images/002_small.jpg") !important; }
+
+.catpc {
+  background-image: url("images/007.jpg") !important; }
+
+.platform {
+  background-image: url("images/003.jpg") !important; }
+
+.location {
+  background-image: url("images/005.jpg") !important; }
+
+.institute {
+  background-image: url("images/004.jpg") !important; }
+
+.institute h1, .oma h1 {
+  color: black !important; }
+
+.map {
+  width: 100%; }
+
+.image-grid {
+  width: 90%;
+  padding: 10% 10% 30px 10%; }
+
+.grid-blocktwo {
+  background: white;
+  width: 100%;
+  height: 430px;
+  margin-top: 50px;
+  display: block;
+  background-size: cover;
+  cursor: pointer; }
+  .grid-blocktwo:hover {
+    background-blend-mode: multiply;
+    opacity: .5; }
+
+.grid-blockthree {
+  background: white;
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; }
+  .grid-blockthree:hover {
+    background-blend-mode: multiply;
+    opacity: .5; }
+
+.close-image {
+  width: 30px; }
+
+/*.grid-blockfour {
+	background-image: url('images/007.jpg');
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  &:hover {
+	  background-color: pink;
+	  background-blend-mode: multiply;	
+	  opacity: 1;
+  };
+}*/
+.grid-blockfive {
+  background: white;
+  width: 100%;
+  height: 300px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; }
+  .grid-blockfive:hover {
+    background-blend-mode: multiply;
+    opacity: .5; }
+
+.grid-blocksix {
+  background: white;
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; }
+  .grid-blocksix:hover {
+    background-blend-mode: multiply;
+    opacity: .5; }
+
+.expgarden {
+  margin-top: 100px; }
+
+.scrolldown {
+  position: fixed;
+  width: 20px;
+  left: 50%;
+  bottom: 20px;
+  opacity: 0; }
+
+.grid-blockten {
+  background: white;
+  width: 100%;
+  height: 250px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; }
+  .grid-blockten:hover {
+    background-blend-mode: multiply;
+    opacity: .5; }
+
+.grid-blockseven {
+  background-image: url("images/005.jpg");
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; }
+  .grid-blockseven:hover {
+    background-blend-mode: multiply;
+    opacity: .5; }
+
+.grid-blockeight {
+  background: white;
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer; }
+  .grid-blockeight:hover {
+    background-blend-mode: multiply;
+    opacity: .5; }
+
+h3 {
+  margin-top: -30px;
+  margin-left: 20px;
+  bottom: 20px;
+  color: grey !important;
+  font-family: 'adobe-caslon-pro' !important; }
+
+.grid-item {
+  width: 25%; }
+
+.grid-item--width2 {
+  width: 50%; }
+
+.grid-item--width3 {
+  width: 75%; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1000000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto; }
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: block;
+  background-image: url("images/007_small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed; }
+
+.right {
+  float: right;
+  width: 50%;
+  height: 100%;
+  display: block; }
+
+.right-text {
+  position: absolute;
+  top: 0;
+  color: black;
+  padding: 100px;
+  font-size: 20px !important; }
+
+.overlay-kop {
+  font-family: "adobe-caslon-pro",serif !important;
+  text-transform: uppercase;
+  font-size: 48px !important;
+  font-style: normal;
+  font-weight: 600 !important;
+  padding-top: 150px;
+  padding-left: 50px;
+  letter-spacing: 10px;
+  color: white; }
+
+.close-button {
+  position: fixed;
+  display: block;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  z-index: 1000000; }
+
+.white-text {
+  color: white; }
+
+.anim-right {
+  margin-top: 20px; }
+
+.eerstestuk {
+  background-image: url("images/001.jpg");
+  background-size: cover;
+  width: 100%;
+  display: block;
+  min-height: 100vh; }
+
+.tussenstuk {
+  background-image: url("images/tussenstuk.jpg");
+  background-size: cover;
+  width: 100%;
+  display: block;
+  padding-top: 100px; }
+
+.image-fit {
+  width: 100%; }
+
+.smallmargin {
+  margin-top: 40px; }
+
+.derdestuk {
+  background-image: url("images/laatste.jpg");
+  background-size: cover;
+  width: 100%;
+  display: block; }
+
+.col-text {
+  padding: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white; }
+
+@media (max-width: 800px) {
+  .grid-item {
+    width: 100%;
+    margin-top: 100px !important; }
+  .grid-item--width2 {
+    width: 100%;
+    margin-top: 40px; }
+  .grid-item--width3 {
+    width: 75%; }
+  .left {
+    width: 100%;
+    height: 300px;
+    position: initial; }
+  .right {
+    width: 100%;
+    float: none;
+    margin-top: 300px; }
+  .right-text {
+    padding-top: 350px !important; } }
+
+@media (max-width: 600px) {
+  .right {
+    width: 100%;
+    float: none;
+    margin-top: 300px !important; }
+  .right-text {
+    padding-top: 350px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important; }
+  .nav--right {
+    display: none; }
+  .header--top {
+    margin-top: 400px !important; }
+  h1 {
+    font-size: 42px !important; } }
