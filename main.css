@@ -79,6 +79,11 @@ a {
   padding-top: 100px;
   padding-bottom: 100px; }
 
+.email-link {
+  color: black !important;
+  text-decoration: underline;
+}
+
 i {
   font-family: adobe-caslon-pro, serif;
   font-style: italic;
