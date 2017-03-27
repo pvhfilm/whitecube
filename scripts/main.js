@@ -27,7 +27,7 @@ function closeOverlay(){
 
 function insertOverlay(title, text, bgImg){
 	console.log('bla');
-	container.insertAdjacentHTML('afterbegin', '<div class="overlay"><div class="left ' + bgImg + '"><h1 class="overlay-kop">' + title + '</h1></div><div class="right"><div class="close-button"><img class="close-image" src="../images/close.svg"/></div><p class="right-text">' + text + '</p></div></div>');
+	container.insertAdjacentHTML('afterbegin', '<div class="overlay"><div class="left ' + bgImg + '"><h1 class="overlay-kop">' + title + '</h1></div><div class="right"><div class="close-button"><img class="close-image" src="images/close.svg"/></div><p class="right-text">' + text + '</p></div></div>');
 
 // var closeButton = document.getElementsByClassName('close-button')[0];
 // console.log(closeButton);
