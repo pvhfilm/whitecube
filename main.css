@@ -54,15 +54,22 @@ body {
 a {
   color: white !important; }
 
+.noscroll {
+  overflow: hidden; }
+
+.black-link {
+  color: black !important;
+  text-decoration: underline; }
+
 @font-face {
   font-family: 'Univers';
-  src: url("fonts/univers.woff") format("woff"); }
+  src: url("../fonts/univers.woff") format("woff"); }
 
 .header {
   height: 100vh;
   min-height: 100vh;
   width: 100%;
-  background-image: url("images/omarender.png");
+  background-image: url("../images/whitecube.jpg");
   background-size: cover; }
 
 .header--text {
@@ -78,11 +85,6 @@ a {
 .introduction {
   padding-top: 100px;
   padding-bottom: 100px; }
-
-.email-link {
-  color: black !important;
-  text-decoration: underline;
-}
 
 i {
   font-family: adobe-caslon-pro, serif;
@@ -112,8 +114,9 @@ h4 {
 
 p {
   font-family: "adobe-caslon-pro",serif !important;
-  font-size: 18px !important;
-  font-weight: 400 !important; }
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  text-align: justify; }
 
 nav {
   position: fixed;
@@ -132,7 +135,20 @@ nav {
   color: black !important; }
 
 .nav--left {
-  float: left; }
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+  color: white;
+  font-size: 18px;
+  text-align: right;
+  z-index: 1000; }
+
+#research {
+  padding-top: 70px; }
+
+.nav--left div {
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .nav--left span {
   display: none; }
@@ -145,12 +161,34 @@ nav {
   float: right;
   margin-right: 20px; }
 
+.left-logo {
+  float: left;
+  position: fixed;
+  right: 92px;
+  cursor: pointer; }
+
+.right-logo {
+  float: right;
+  cursor: pointer; }
+
 .a-black {
   color: black !important; }
 
-pre {
+.nav-top {
+  width: 100%;
+  /*background: blue;*/
+  display: -ms-flexbox;
+  display: flex; }
+
+.nav-top li {
   font-family: Univers !important;
-  color: white !important; }
+  color: white !important;
+  float: left;
+  text-align: center;
+  margin-left: 14px;
+  margin-right: auto;
+  width: 14%;
+  /*background: green;*/ }
 
 h1 {
   font-family: "adobe-caslon-pro",serif !important;
@@ -161,8 +199,11 @@ ul li {
   font-family: "adobe-caslon-pro",serif !important;
   font-size: 18px; }
 
+.program li {
+  font-size: 16px; }
+
 .grid-blockone {
-  /*background-image: url('images/010.png');*/
+  /*background-image: url('../images/010.png');*/
   background: white;
   width: 100%;
   height: 400px;
@@ -182,28 +223,30 @@ em {
   height: 500px;
   background-size: cover;
   background-position: center;
-  background-image: url("images/drawing.jpg"); }
+  background-image: url("../images/drawing.jpg"); }
 
 .oma {
-  background-image: url("images/010.png") !important; }
+  background-image: url("../images/010.png") !important;
+  background-position: center; }
 
 .chocolate {
-  background-image: url("images/002.jpg") !important; }
+  background-image: url("../images/002.jpg") !important; }
 
 .garden {
-  background-image: url("images/002_small.jpg") !important; }
+  background-image: url("../images/002_small.jpg") !important; }
 
 .catpc {
-  background-image: url("images/007.jpg") !important; }
+  background-image: url("../images/007.jpg") !important; }
 
 .platform {
-  background-image: url("images/003.jpg") !important; }
+  background-image: url("../images/003.jpg") !important; }
 
 .location {
-  background-image: url("images/005.jpg") !important; }
+  background-image: url("../images/005.jpg") !important; }
 
 .institute {
-  background-image: url("images/004.jpg") !important; }
+  background-image: url("../images/004.jpg") !important;
+  background-position: center; }
 
 .institute h1, .oma h1 {
   color: black !important; }
@@ -239,11 +282,26 @@ em {
     background-blend-mode: multiply;
     opacity: .5; }
 
+.goback-button {
+  padding: 4px 8px 4px 8px;
+  border-bottom: 2px solid white;
+  background: black;
+  color: white;
+  display: initial;
+  position: fixed;
+  font-size: 12px;
+  margin-top: 23px;
+  margin-left: 50px;
+  font-family: univers; }
+
 .close-image {
   width: 30px; }
 
+.close-image:hover {
+  opacity: .6; }
+
 /*.grid-blockfour {
-	background-image: url('images/007.jpg');
+	background-image: url('../images/007.jpg');
   width: 100%;
   height: 400px;
   display: block;
@@ -288,7 +346,9 @@ em {
   width: 20px;
   left: 50%;
   bottom: 20px;
-  opacity: 0; }
+  opacity: 0;
+  z-index: 100000;
+  cursor: pointer; }
 
 .grid-blockten {
   background: white;
@@ -303,7 +363,7 @@ em {
     opacity: .5; }
 
 .grid-blockseven {
-  background-image: url("images/005.jpg");
+  background-image: url("../images/005.jpg");
   width: 100%;
   height: 400px;
   display: block;
@@ -358,7 +418,7 @@ h3 {
   width: 50%;
   height: 100%;
   display: block;
-  background-image: url("images/007_small.jpg");
+  background-image: url("../images/007_small.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed; }
@@ -402,14 +462,14 @@ h3 {
   margin-top: 20px; }
 
 .eerstestuk {
-  background-image: url("images/001.jpg");
+  background-image: url("../images/001.jpg");
   background-size: cover;
   width: 100%;
   display: block;
   min-height: 100vh; }
 
 .tussenstuk {
-  background-image: url("images/tussenstuk.jpg");
+  background-image: url("../images/tussenstuk.jpg");
   background-size: cover;
   width: 100%;
   display: block;
@@ -422,7 +482,7 @@ h3 {
   margin-top: 40px; }
 
 .derdestuk {
-  background-image: url("images/laatste.jpg");
+  background-image: url("../images/laatste.jpg");
   background-size: cover;
   width: 100%;
   display: block; }
