@@ -182,9 +182,13 @@ $(window).scroll(function(){
 
 if (ScrollTop > height){
   $('.nav--left').addClass('nav--black'); 
+  $('.nav--lang').addClass('nav--black'); 
+  $('.linklink').addClass('nav--black'); 
   $('.links').addClass('nav--black'); 
 } else {
   $('.nav--left').removeClass('nav--black'); 
+  $('.nav--lang').removeClass('nav--black'); 
+  $('.linklink').removeClass('nav--black'); 
   $('.links').removeClass('nav--black'); 
 }
 
