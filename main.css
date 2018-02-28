@@ -390,6 +390,10 @@ em {
     background-blend-mode: multiply;
     opacity: .5; }
 
+.herolink {
+text-decoration: underline;
+}
+
 .grid-blockeight {
   background: white;
   width: 100%;
