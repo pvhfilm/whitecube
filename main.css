@@ -72,6 +72,13 @@ a {
   background-image: url("images/first.jpg");
   background-size: cover; }
 
+.moreinformation {
+    border: 2px dotted white;
+    display: inline-block;
+    padding: 22px;
+    border-radius: 19px;
+}
+
 .header--text {
   margin-top: 240px;
   color: white;
